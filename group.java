@@ -1,3 +1,5 @@
+package githubpublic;
+
 public class group {
 	
 	public static void getGroupMembers() {
@@ -11,6 +13,7 @@ public class group {
 		getGroupMembers();
 		System.out.println(multiply(3,2));
 		System.out.println(power(3,2));
+		System.out.println(division(3,1));
 	}
 	
 	public static int multiply(int num1, int num2) {
@@ -37,20 +40,16 @@ public class group {
         return result;
     }
     
-    public int division(int num1, int num2) {
-    	if (num2==0) {
+    public static int division(int num1, int num2) {
+    	if (num1==0) {
     		throw new ArithmeticException("/ by zero");
     	}
     	int i = 1;
-    	while(num2 > num1) {
+    	while(num1 > num2) {
     		
-    		num2 -= num1;;
+    		num1 -= num2;;
     		i+=1;
     	}
-    	
     	return i;
-    	
-    	
     }
-
 }
