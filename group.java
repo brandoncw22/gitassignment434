@@ -2,7 +2,7 @@ public class group {
 	public void getGroupMembers() {
 		System.out.println("Anthony Mikulcic");
 		System.out.println("Brandon Wendell");
-        System.out.println("Drew Robinson");
+        	System.out.println("Drew Robinson");
 	}
 	
 
