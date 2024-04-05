@@ -1,3 +1,5 @@
+package github;
+
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -34,6 +36,7 @@ public class groupTest {
 		
 		assertEquals(0,obj.division(5, 0), 1);
 	}
+	
 	@Test
 	public void testDivision1() {
 		
