@@ -17,6 +17,9 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
+	environment {
+    BITBUCKET_COMMON_CREDS = credentials('jenkins-bitbucket-common-creds')
+}
         }
     }
 }
