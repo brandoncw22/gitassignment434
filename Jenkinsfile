@@ -1,5 +1,3 @@
-
-
 pipeline {
 	agent any
     stages {
@@ -8,8 +6,6 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
-	    	repoOwner('<user-group>')
-		repository('<repository>')
         stage('Test') {
             steps {
                 sh 'mvn test'
@@ -19,11 +15,6 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
-	environment {
-    BITBUCKET_COMMON_CREDS = credentials('jenkins-bitbucket-common-creds')
-}
         }
     }
 }
-
-
