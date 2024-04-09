@@ -8,6 +8,8 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
+	    	repoOwner('<user-group>')
+		repository('<repository>')
         stage('Test') {
             steps {
                 sh 'mvn test'
